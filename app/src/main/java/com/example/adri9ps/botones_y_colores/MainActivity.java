@@ -48,6 +48,23 @@ public class MainActivity extends AppCompatActivity {
                 cuentaEstrellas.setText("[" + estrellas.getRating()+ "/5]");
             }
         });
+
+        longClick.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                Toast t1;
+                t1 = Toast.makeText(getApplicationContext(),"Muchas gracias",Toast.LENGTH_SHORT);
+                t1.show();
+                return false;
+
+
+
+
+            }
+
+
+
+        });
     }
 
 
@@ -92,22 +109,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        longClick.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                Toast t1;
-                t1 = Toast.makeText(getApplicationContext(),"Muchas gracias",Toast.LENGTH_SHORT);
-                t1.show();
-                return false;
 
-
-
-
-            }
-
-            
-
-        });
 
 
 
